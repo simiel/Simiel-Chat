@@ -1,7 +1,7 @@
 {
   "name": "simiel-chat",
   "version": "1.0.0",
-  "description": "A very simple chat app, Simiel means Simple",
+  "description": "A very simple chat app, Simiel means Simple. Minimalist multi-room chat app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
