@@ -3,6 +3,8 @@ import fs from 'fs/promises'; // Using fs.promises for async file operations
 import path from 'path';
 import mime from 'mime';
 
+const cache = {};
+
 function send404(response) {
   response.writeHead(404, { 'Content-Type': 'text/plain' });
   response.write('Error 404: resource not found.');
