@@ -8,5 +8,8 @@
   },
   "author": "Simiel",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "mime": "^4.0.1"
+  }
 }
