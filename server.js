@@ -32,15 +32,15 @@ async function serveStatic(response, cache, absPath) {
   }
 }
 
-var server = http.createServer(function (request, response) {
-  var filePath = false;
-  if (request.url == '/') {
+const server = http.createServer(async (request, response) => {
+  let filePath = false;
+  if (request.url === '/') {
     filePath = 'public/index.html';
   } else {
-    filePath = 'public' + request.url;
+    filePath = `public${request.url}`;
   }
-  var absPath = './' + filePath;
-  serveStatic(response, cache, absPath);
+  const absPath = `./${filePath}`;
+  await serveStatic(response, cache, absPath);
 });
 
 server.listen(3000, function () {
