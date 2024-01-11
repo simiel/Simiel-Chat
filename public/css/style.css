@@ -12,11 +12,13 @@ a {
 }
 #room {
   background-color: #ddd;
+  padding: 10px;
   margin-bottom: 1em;
 }
 #messages {
-  width: 690px;
+  width: 650px;
   height: 300px;
+  padding: 10px;
   overflow: auto;
   background-color: #eee;
   margin-bottom: 1em;
@@ -25,9 +27,10 @@ a {
 
 #room-list {
   float: right;
-  width: 100px;
+  width: 120px;
   height: 300px;
   overflow: auto;
+  padding: 5px;
 }
 #room-list div {
   border-bottom: 1px solid #eee;

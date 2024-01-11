@@ -71,6 +71,7 @@ const listen = (server) => {
 
     socket.on('rooms', () => {
       socket.emit('rooms', io.sockets.adapter.rooms);
+      console.log(io.sockets.adapter.rooms);
     });
 
     handleClientDisconnection(socket, nickNames, namesUsed);
@@ -160,6 +161,7 @@ function handleClientDisconnection(socket) {
     var nameIndex = namesUsed.indexOf(nickNames[socket.id]);
     delete namesUsed[nameIndex];
     delete nickNames[socket.id];
+    console.log('disconnect');
   });
 }
 
